@@ -8,10 +8,11 @@ namespace Program
 
 		//Will be discussing on Method
 		//Method one
-
 		static int Sum(int x, int y)
 		{
 			int result = x + y;
+
+			Console.WriteLine(result);	
 
 			return result;
 
@@ -37,6 +38,12 @@ namespace Program
 			return result;
 		}
 
+		//method four with parameter list without return type.
+		static void SubtString(int p)
+		{
+			Console.WriteLine("Four multiply by P ::"+ " " + 4 * p);
+		}
+
 		public static void Main(string[] args) {
 
 			int f = 12;
@@ -56,6 +63,16 @@ namespace Program
 			Console.WriteLine("");
 
 			Console.WriteLine("The sub value is " + " " + d);
+
+			Console.WriteLine("");
+
+			int z = 10;
+
+			SubtString(z);
+
+			Console.WriteLine("");
+
+			Sum(f, m);
 
 		
 		}
